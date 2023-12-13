@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <div id="form-container">
+        <div class="panel" id="form-box">
+            <form action="login.php" method="post">
+                <h1 class="text-center">Login</h1>
+                <div class="form-group">
+                    <label for="login" class="sr-only">Usuário</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <input type="text" name="usuario" class="form-control" placeholder="Seu login de usuário" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha" class="sr-only">Senha</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-lock"></span>
+                        </div>
+                        <input type="password" name="senha" class="form-control" placeholder="Digite sua senha" required minlength="6">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Entrar" class="btn btn-success form-control">
+                </div>
+
+                <div class="form-group">
+                    Não é registrado? <a href="cadastro.html">Crie uma conta</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
